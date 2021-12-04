@@ -34,6 +34,7 @@ header {
     }
 }
 .start {
+    text-shadow: 0.5px 0.5px 2px rebeccapurple;
     color: aquamarine;
     display:flex;
     align-items: center;

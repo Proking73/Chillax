@@ -47,7 +47,7 @@ header {
     background: hsla(0 79% 72% / 0.5);
     width: 3.75em;
     height: 3.75em;
-    transition:opacity 0.2s ease-in ;
+    transition:display 0.9s ease-in ;
 }
 .start:hover {
     cursor: pointer;

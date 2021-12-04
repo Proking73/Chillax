@@ -12,43 +12,42 @@ body {
     font-family: "Zen Kurenaido", sans-serif;
 }
 .title {
+    display: inline;
     width: max-content;
-    padding: 1vw;
     text-shadow:0 0 black;
+    color: wheat;
 }
 header {
+    display: flex;
     font-size: calc(4vh - 0.5vw);
     box-sizing: border-box;
-    border: 2px solid red;
-    padding:0 3vw;
-    width: max-content;
+    padding: 0 3vw;
+    width: 30vw;
     position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
 }
 .start {
-    position: absolute;
+    color: aquamarine;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-variant: small-caps;
+    font-style: italic;
+    pointer-events: all;
+    opacity: 1;
     border-radius: 100%;
     background: hsla(0 79% 72% / 0.5);
-    width: 4em;
-    height: 4em;
+    width: 3.75em;
+    height: 3.75em;
+    transition:opacity 0.2s ease-in ;
 }
 .start:hover {
     cursor: pointer;
-}
-/*why do u have to hold on active?*/
-@keyframes buttoneffect {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.50;
-    }
-    75% {
-        opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-}
-.start:active {
-    animation: buttoneffect 0.5s ease-in 1;
 }

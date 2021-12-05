@@ -37,9 +37,24 @@ header {
         font-size: 0.75em !important;
     }
 }
+@media only screen and (max-width:400px) {
+    .choices {
+        flex-direction: column;
+        align-items: center;
+    }
+    .choice-item {
+        font-size: smaller;
+        margin-bottom: 5%;
+    }
+}
 @keyframes fadeOut {
     to {
         opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }
 .start {
@@ -64,9 +79,9 @@ header {
 /* choices */
 .choices {
     justify-content: space-between;
-    display: flex;
+    display: none;
     width: 50vw;
-    opacity: 1;
+    opacity: 0;
 }
 .choice-item {
     font-size: 1.25em;
@@ -79,4 +94,7 @@ header {
     background-color: hsla(167, 100%, 50%, 0.596);
     width: 15vw;
     aspect-ratio: 5/2;
+}
+.choice-item:hover {
+    cursor: pointer;
 }

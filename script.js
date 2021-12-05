@@ -1,3 +1,5 @@
+//fade-in wrapper; body onload="function" function makes the wrapper fade in but not working because 'animation-end' event, fix? maybe nest inside of function or other event?
+
 //variables
 const start = document.querySelector(".start");
 const wrapper = document.querySelector("header");

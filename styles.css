@@ -18,6 +18,7 @@ body {
     color: wheat;
 }
 header {
+    opacity: 1;
     display: flex;
     font-size: calc(4vh - 0.5vw);
     box-sizing: border-box;
@@ -31,6 +32,14 @@ header {
 @media only screen and (max-width:700px) {
     header {
         flex-direction: column;
+    }
+    .choice-item {
+        font-size: 0.75em !important;
+    }
+}
+@keyframes fadeOut {
+    to {
+        opacity: 0;
     }
 }
 .start {
@@ -51,4 +60,23 @@ header {
 }
 .start:hover {
     cursor: pointer;
+}
+/* choices */
+.choices {
+    justify-content: space-between;
+    display: flex;
+    width: 50vw;
+    opacity: 1;
+}
+.choice-item {
+    font-size: 1.25em;
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-end */
+    border-radius: 30%;
+    background-color: hsla(167, 100%, 50%, 0.596);
+    width: 15vw;
+    aspect-ratio: 5/2;
 }

@@ -2,6 +2,7 @@ html {
     background-color: hsla(167, 100%, 50%, 0.281);
 }
 body {
+    overflow: hidden;
     margin: 0;
     width:100%;
     height: 100vh;
@@ -93,6 +94,7 @@ header {
     border-radius: 30%;
     background-color: hsla(167, 100%, 50%, 0.596);
     width: 15vw;
+    opacity: 1;
     aspect-ratio: 5/2;
 }
 .choice-item:hover {

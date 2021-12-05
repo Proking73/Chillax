@@ -85,7 +85,11 @@ header {
     opacity: 0;
 }
 .choice-item {
+    box-sizing: border-box;
+    border: 0.25em inset hsla(167, 100%, 45%, 0.596);
     font-size: 1.25em;
+    font-weight: bolder;
+    color: hsl(0, 53%, 42%);
     /* flex */
     display: flex;
     align-items: center;

@@ -46,6 +46,11 @@ header {
         align-items: center;
     }
 }
+@media only screen and (max-width:500px) {
+    .choice-item:last-child {
+        font-size: 50% !important;
+    }
+}
 @keyframes fadeOut {
     to {
         opacity: 0;
@@ -83,6 +88,7 @@ header {
     opacity: 0;
 }
 .choice-item {
+    text-align: center;
     box-sizing: border-box;
     border: 0.25em inset hsla(167, 100%, 45%, 0.596);
     font-size: 1.25em;

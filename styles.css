@@ -1,3 +1,6 @@
+*::selection {
+    background: hsla(167, 96%, 29%, 0.493);
+}
 html {
     background-color: hsla(167, 100%, 50%, 0.281);
 }
@@ -36,16 +39,11 @@ header {
     }
     .choice-item {
         font-size: 0.75em !important;
+        margin-bottom: 5%;
     }
-}
-@media only screen and (max-width:400px) {
     .choices {
         flex-direction: column;
         align-items: center;
-    }
-    .choice-item {
-        font-size: smaller;
-        margin-bottom: 5%;
     }
 }
 @keyframes fadeOut {
@@ -89,7 +87,6 @@ header {
     border: 0.25em inset hsla(167, 100%, 45%, 0.596);
     font-size: 1.25em;
     font-weight: bolder;
-    color: hsl(0, 53%, 42%);
     /* flex */
     display: flex;
     align-items: center;
@@ -103,4 +100,8 @@ header {
 }
 .choice-item:hover {
     cursor: pointer;
+}
+.choice-item>a {
+    color: hsl(138, 53%, 42%);
+    text-decoration: none;
 }

@@ -24,9 +24,3 @@ choices.addEventListener('animationend', () => {
     choices.style.opacity = "1";
 });
 
-choiceItem1.addEventListener('click', () => {
-    choices.style.animation = fadeOut;
-    event.target.addEventListener('animationend', () => {
-        event.target.href = "https://www.w3schools.com/java/java_date.asp";
-    });
-});

@@ -5,6 +5,9 @@ const start = document.querySelector(".start");
 const wrapper = document.querySelector("header");
 const title = document.querySelector("h1");
 const choices = document.querySelector(".choices");
+const choiceItem1 = document.querySelector(".choice-item1");
+const choiceItem2 = document.querySelector(".choice-item3");
+const choiceItem3 = document.querySelector(".choice-item3");
 //animations
 const fadeOut = "fadeOut 0.75s ease-out";
 const fadeIn = "fadeIn 0.5s ease-in";
@@ -20,9 +23,10 @@ wrapper.addEventListener('animationend', () => {
 choices.addEventListener('animationend', () => {
     choices.style.opacity = "1";
 });
-function itemsFade() {
-    event.target.style.animation = fadeOut;
+
+choiceItem1.addEventListener('click', () => {
+    choices.style.animation = fadeOut;
     event.target.addEventListener('animationend', () => {
-        choices.style.display = "none";
+        event.target.href = "https://www.w3schools.com/java/java_date.asp";
     });
-}
+});

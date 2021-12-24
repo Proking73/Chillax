@@ -22,7 +22,12 @@ choices.addEventListener('animationend', () => {
     choices.style.opacity = "1";
 });
 for (let x = 0; x < choiceItems.length; x++) {
-    choiceItems[x].addEventListener('click', () => {
-        choiceItems[x].style.display = "none";
+    const options = choiceItems[x];
+    options.addEventListener('click', () => {
+        options.style.animation = fadeOut;
+        options.addEventListener('animationend', () => {
+            choices.style.display = "none";
+            options.firstElementChild.href = "https://codepen.io/proking73/pen/gOGGRyL";
+        });
     });
 }

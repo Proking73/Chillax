@@ -5,6 +5,7 @@ const start = document.querySelector(".start");
 const wrapper = document.querySelector("header");
 const title = document.querySelector("h1");
 const choices = document.querySelector(".choices");
+const choiceItems = document.getElementsByClassName("choice-item");
 const choiceItem1 = document.querySelector(".choice-item1");
 const choiceItem2 = document.querySelector(".choice-item3");
 const choiceItem3 = document.querySelector(".choice-item3");
@@ -23,4 +24,6 @@ wrapper.addEventListener('animationend', () => {
 choices.addEventListener('animationend', () => {
     choices.style.opacity = "1";
 });
-
+for (let x = 0; x < choiceItems.length; x++) {
+    console.log(choiceItems[x])
+}

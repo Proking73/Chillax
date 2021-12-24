@@ -6,9 +6,6 @@ const wrapper = document.querySelector("header");
 const title = document.querySelector("h1");
 const choices = document.querySelector(".choices");
 const choiceItems = document.getElementsByClassName("choice-item");
-const choiceItem1 = choiceItems[0];
-const choiceItem2 = choiceItems[1];
-const choiceItem3 = choiceItems[2].children.;
 //animations
 const fadeOut = "fadeOut 0.75s ease-out";
 const fadeIn = "fadeIn 0.5s ease-in";
@@ -24,3 +21,8 @@ wrapper.addEventListener('animationend', () => {
 choices.addEventListener('animationend', () => {
     choices.style.opacity = "1";
 });
+for (let x = 0; x < choiceItems.length; x++) {
+    choiceItems[x].addEventListener('click', () => {
+        choiceItems[x].style.display = "none";
+    });
+}

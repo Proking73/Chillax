@@ -27,7 +27,7 @@ for (let x = 0; x < choiceItems.length; x++) {
         options.style.animation = fadeOut;
         options.addEventListener('animationend', () => {
             choices.style.display = "none";
-            options.firstElementChild.href = "https://codepen.io/proking73/pen/gOGGRyL";
+            options.firstElementChild.href = "breath.html";
         });
     });
 }
